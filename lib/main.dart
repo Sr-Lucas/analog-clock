@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           title: 'Analog Clock',
           theme: themeData(context),
           darkTheme: darkThemeData(context),
-          themeMode: ThemeMode.light,
+          themeMode: theme.isLightTheme ? ThemeMode.light : ThemeMode.dark,
           home: HomeScreen(),
         ),
       ),
